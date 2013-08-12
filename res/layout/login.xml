@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:id="@+id/textView" android:layout_gravity="center" android:layout_margin="5dp"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username" android:layout_gravity="center" android:layout_margin="10dp"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="频道"
+            android:id="@+id/textView1" android:gravity="center_horizontal" android:layout_margin="5dp"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channel" android:layout_gravity="center" android:layout_margin="10dp"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center_horizontal">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="连接"
+                android:id="@+id/button" android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" android:layout_margin="10dp" android:onClick="doLogin"/>
+    </RelativeLayout>
+</LinearLayout>
